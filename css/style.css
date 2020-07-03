@@ -6,7 +6,7 @@ html, body {
     height: 100vh;
     background-size: cover;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
@@ -136,7 +136,7 @@ html, body {
 
 @media screen and (max-width: 1400px) {
     html, body {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .navbar-brand > img {
@@ -157,9 +157,13 @@ html, body {
 }
 @media screen and (max-width: 768px) {
     html, body {
-        font-size: 14px;
+        font-size: 13px;
         background-color: black;
         opacity: 1;
+    }
+
+    .social-media-container {
+        flex-direction: column;
     }
 
     .cover {
@@ -168,4 +172,10 @@ html, body {
         filter: blur(1px);
     }
 
+}
+
+@media screen and (max-width: 350px) {
+    html, body {
+        font-size: 10px;
+    }
 }
