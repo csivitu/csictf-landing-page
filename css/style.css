@@ -41,6 +41,24 @@ html, body {
     margin-right: 0.3rem;
 }
 
+.nav-link {
+    transition-duration: 0.1s;
+    border-bottom: 0.2rem solid rgba(255,255,255,0);
+}
+
+.nav-link:hover {
+    border-bottom: 0.2rem solid rgba(255,255,255,1);
+    color: #A92EF4;
+}
+
+.nav-right .nav-item {
+    margin-right: 0 0.5rem;
+}
+
+.nav-register {
+    border-right: 0.2rem solid white;
+}
+
 .main-heading {
     font-size: 2rem;
     font-weight: 500;
@@ -70,14 +88,48 @@ html, body {
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
     border-radius: 0.2rem;
+    transition-duration: 0.2s;
 }
+
+.register-btn:hover {
+    background-color: #A92EF4;
+    cursor: pointer;
+    color: white !important;
+    text-decoration:none;
+}
+
+.social-media a {
+    font-size: 1.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 20rem;
+    padding: 0.5rem;
+    margin-left: 2rem;
+    margin-bottom: 0.2rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    display: inline-block;
+    transition-duration: 0.1s;
+}
+
+.social-media a:hover {
+    background-color: #A92EF4;
+    color: white;
+}
+
 
 .sponsor {
     font-size: 1.5rem;
 }
+
+.sponsor a:hover {
+    color: #A92EF4 !important;
+}
+
 @media screen and (max-width: 1400px) {
     html, body {
-        font-size: 12px;
+        font-size: 16px;
     }
     
     .navbar-brand > img {
@@ -86,8 +138,19 @@ html, body {
 }
 
 
+@media screen and (max-width: 1024px) {
+    .navbar-collapse {
+        padding-left: 2rem;
+        background-color: rgba(0,0,0,0.9);
+        padding-bottom: 2rem;
+    }
+    .nav-register {
+        border-right: none;
+    }
+}
 @media screen and (max-width: 768px) {
     html, body {
+        font-size: 14px;
         background-color: black;
         opacity: 1;
     }
@@ -98,9 +161,4 @@ html, body {
         filter: blur(1px);
     }
 
-    .navbar-collapse {
-        padding-left: 2rem;
-        background-color: rgba(0,0,0,0.9);
-        padding-bottom: 2rem;
-    }
 }
