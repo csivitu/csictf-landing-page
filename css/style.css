@@ -64,6 +64,13 @@ html, body {
     font-weight: 500;
 }
 
+.main-heading a {
+    color: #A92EF4 !important;
+}
+.main-heading a:hover {
+    color: #A92EF4 !important;
+}
+
 .top-spacing {
     height: 10vh
 }
