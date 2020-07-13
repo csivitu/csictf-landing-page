@@ -2,90 +2,159 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="CSIVIT" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="CSIVIT" />
 	<meta property="og:title" content="csictf" />
 	<meta name="twitter:description" property="og:description" itemprop="description"
 		content="A beginner to intermediate level jeopardy-style CTF hosted by the csictf team" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://ctf.csivit.com" />
 	<meta property="og:image" content="https://csivitu.github.io/csictf-landing-page/images/logo.png" />
-    <title>csictf 2020</title>
-    <link rel="shortcut icon" href="https://csivitu.github.io/csictf-landing-page/images/logo.png" />
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://csivitu.github.io/csictf-landing-page/css/style.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
+	<title>csictf 2020</title>
+	<link rel="shortcut icon" href="https://csivitu.github.io/csictf-landing-page/images/logo.png" />
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://csivitu.github.io/csictf-landing-page/css/style.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
 
 </head>
 
 <body>
-    <div class="cover"></div>
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">
-            <img src="https://csivitu.github.io/csictf-landing-page/images/logo.png" alt="" loading="lazy">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-                <i class='bx bx-menu text-white' style="font-size: 2rem;"></i>
-            </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav mr-auto">
-                <a class="nav-item nav-link active" href="/users">Users<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="/teams">Teams</a>
-                <a class="nav-item nav-link" href="/scoreboard">Scoreboard</a>
-                <a class="nav-item nav-link" href="/challenges">Challenges</a>
-            </div>
-            <div class="navbar-nav mr-5 nav-right">
-                <a class="nav-item nav-link nav-register" href="/register">Register</a>
-                <a class="nav-item nav-link" href="/login">Login</a>
-            </div>
-        </div>
-    </nav>
+	<div class="cover"></div>
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<a class="navbar-brand" href="#">
+			<img src="https://csivitu.github.io/csictf-landing-page/images/logo.png" alt="" loading="lazy">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon">
+				<i class='bx bx-menu text-white' style="font-size: 2rem;"></i>
+			</span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav mr-auto">
+				<a class="nav-item nav-link active" href="/users">Users<span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="/teams">Teams</a>
+				<a class="nav-item nav-link" href="/scoreboard">Scoreboard</a>
+				<a class="nav-item nav-link" href="/challenges">Challenges</a>
+			</div>
+			<div class="navbar-nav mr-5 nav-right">
+				<a class="nav-item nav-link nav-register" href="/register">Register</a>
+				<a class="nav-item nav-link" href="/login">Login</a>
+			</div>
+		</div>
+	</nav>
 
-    <div class="container-fluid px-5 main-container d-flex justify-content-between flex-column">
-        <div class="top-spacing"></div>
-        <div class="row">
-            <div class="col-lg-5 col-md-8 col-sm-10">
-                <div class="main-heading">A beginner to intermediate level jeopardy-style CTF hosted by the <a href="https://ctftime.org/team/77170" target="_blank">csictf team</a>. <br>Join our <a href="https://discord.gg/9wHPB2B" target="_blank">discord <i style="vertical-align: middle;" class='bx bxl-discord'></i></a>.</div>
-                <div class='dates text-center d-inline-block mt-4 mb-5'>
-                    18 July 2020 00:00 IST <br> to <br> 22 July 2020 00:00 IST
-                </div>
-                <br>
-                <a class="py-3 px-4 d-inline-block register-btn" href="/register">REGISTER NOW</a>
-            </div>
-        </div>
-        <div class="d-flex justify-content-between align-items-center pb-3 social-media-container">
-            <div class='sponsor'>Infra sponsored by <a class="text-white" href="https://g.co/cloud" target="_blank">g.co/cloud</a>.</div>
-            <div></div>
-            <div class="social-media py-2">
-                <a href="https://twitter.com/csivitu" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.facebook.com/csivitu/" target="_blank" class="facebook"><i
-                        class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/csivitu/" target="_blank" class="instagram"><i
-                        class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/computer-society-of-india-vit-student-chapter/"
-                    target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
+	<div class="container-fluid px-5 main-container d-flex justify-content-between flex-column">
+		<div></div>
+		<div class="row">
+			<div class="col-lg-5 col-md-8 col-sm-10">
+				<div class="main-heading">A beginner to intermediate level jeopardy-style CTF hosted by the <a
+						href="https://ctftime.org/team/77170" target="_blank">csictf team</a>. <br>Join our <a
+						href="https://discord.gg/9wHPB2B" target="_blank">discord <i style="vertical-align: middle;"
+							class='bx bxl-discord'></i></a>.</div>
+				<div class='dates text-center d-inline-block mt-4 mb-5'>
+					18 July 2020 00:00 IST <br> to <br> 22 July 2020 00:00 IST
+				</div>
+				<br>
+				<a class="py-3 px-4 d-inline-block register-btn" href="/register">REGISTER NOW</a>
+			</div>
+		</div>
+		<div class="d-flex justify-content-between align-items-center pb-3 social-media-container">
+			<div class='sponsor'>Infra sponsored by <a class="text-white" href="https://g.co/cloud"
+					target="_blank">g.co/cloud</a>.</div>
+			<div></div>
+			<div class="social-media py-2">
+			</div>
+		</div>
+	</div>
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+	<div class="container-fluid px-5 content">
+		<div class="card">
+			<div class="card-body">
+				<h3>What is csictf?</h1>
+					<p>csictf is a jeopardy-style capture the flag competition. You will be presented with cyber
+						security
+						questions on various categories like Pwn, Web, OSINT, Linux, Crypto, Forensics, and Reversing.
+						Your
+						goal is to solve these challenges and find and submit the flag on our website, to gain points on
+						the
+						leaderboard!</p>
+
+					<h3 class="mt-3">What if i'm a beginner?</h1>
+						<p>That's perfect. csictf is targeted towards beginners, and most challenges will be geared
+							towards
+							helping you learn a wide range of cybsersec concepts, and at the same time, having fun! </p>
+
+						<h3 class="mt-3">Are there prizes?</h1>
+							<p>Yes! The exact prize distribution will be announced a day before the CTF, but here are
+								prizes we'll be distributing to winners: </p>
+							<div class="row">
+								<div class="col-lg-4 d-flex flex-column justify-content-center align-items-center p-5">
+									<img class='prize-logo' src="https://csivitu.github.io/csictf-landing-page/images/thm.png" alt="" srcset="">
+									<strong class="text-center mt-3">1 month VIP subscription voucher from
+										TryHackMe.</strong>
+								</div>
+								<div class="col-lg-4 d-flex flex-column justify-content-center align-items-center p-5">
+									<img class='prize-logo' src="https://csivitu.github.io/csictf-landing-page/images/bugsee.png" alt="" srcset="">
+									<strong class="text-center mt-3">1000$ in Bugsee Credits</strong>
+								</div>
+								<div class="col-lg-4 d-flex flex-column justify-content-center align-items-center p-5">
+									<img class='prize-logo' src="https://csivitu.github.io/csictf-landing-page/images/voiceflow.png" alt="" srcset="">
+									<strong class="text-center mt-3">Voiceflow professional licenses, valued at
+										49$/month</strong>
+								</div>
+							</div>
+							<p>
+								Additionally, we will also be offering:
+							<ul>
+								<li>Personalized certificates for the top 3 teams.</li>
+								<li>CTFtime points based on the CTF's weight.</li>
+								<li>We'll have handles / team names for top 3 teams go up on our social media posts
+									(@csivitu on Instagram/Facebook/LinkedIn/Twitter).</li>
+							</ul>
+
+							Stay tuned for more prize announcements!
+							</p>
+							<div class="social-media py-2">
+								<a href="https://twitter.com/csivitu" target="_blank" class="twitter"><i
+										class="bx bxl-twitter"></i></a>
+								<a href="https://www.facebook.com/csivitu/" target="_blank" class="facebook"><i
+										class="bx bxl-facebook"></i></a>
+								<a href="https://www.instagram.com/csivitu/" target="_blank" class="instagram"><i
+										class="bx bxl-instagram"></i></a>
+								<a href="https://www.linkedin.com/company/computer-society-of-india-vit-student-chapter/"
+									target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+							</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > 100) {
+					$('.navbar').addClass("navbar-bg");
+				} else {
+					$('.navbar').removeClass("navbar-bg");
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>
